@@ -21,6 +21,9 @@ This project was created using the [ModernWebDev Yeoman Generator](https://githu
 ### How to build
 First, make sure that you have installed the required global npm packages: `npm install gulp --global --no-optional`.
 
+Also install some typescript dependencies :
+`npm install typescript -g; npm install tsd -g`
+
 Next, you also need to install the project dependencies using `npm run setup`.
 
-Then run `npm run serve` to run the project
+Then run `npm run serve` to run the project and go to [http://localhost:3000](http://localhost:3000, "http://localhost:3000")

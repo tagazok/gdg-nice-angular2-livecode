@@ -14,7 +14,7 @@ import { Router, RouteConfig, ROUTER_PROVIDERS, RouterOutlet, RouterLink } from
   selector: "app",
   template: `
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div id="container">
+    <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand text-uppercase" [routerLink]="['Home']">
           My contacts
