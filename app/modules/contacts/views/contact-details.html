@@ -1,0 +1,29 @@
+<style>
+.green {
+  color: green;
+}
+.my-icon {
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.bookmarked {
+  color: yellow;
+}
+</style>
+<div class="panel panel-default green">
+  <div class="pull-right">
+    <i class="my-icon glyphicon glyphicon-star" [class.bookmarked]="contact.bookmarked" (click)="bookmark()"></i>
+    <i class="pull-right my-icon glyphicon glyphicon-trash" (click)="removeContact()"></i>
+  </div>
+  <div class="panel-body">
+    <h3>{{contact.firstname}} {{contact.lastname}}</h3>
+    <p>{{contact.email}}</p>
+    <p>{{contact.phone}}</p>
+    <pre>
+      {{contact |json}}
+    </pre>
+  </div>
+</div>
